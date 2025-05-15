@@ -3,84 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chronicare Blog</title>
+  <title>ChronicareLtd</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
-    <nav>
-      <h1>Chronicare Blog</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#articles">Articles</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#signup">Subscribe</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <h1 id="main-heading">CHRONICARE</h1>
+    <p>Empowering chronic disease management through integrated care.</p>
   </header>
 
-  <main>
-    <section id="home">
-      <h2>Welcome to the Chronicare Blog</h2>
-      <p>Empowering chronic disease management through integrated care. Stay informed with our latest health articles and updates.</p>
-    </section>
+  <section>
+    <h2>Healthcare Provider</h2>
+    <p id="status-text">Loading...</p>
+    <button id="change-text-btn" class="animated-button">Request Records</button>
+    <button id="secret-btn">Long Press Me</button>
+  </section>
 
-    <section id="articles">
-      <h2>Latest Articles</h2>
-      <article>
-        <h3>The Importance of Chronic Disease Monitoring</h3>
-        <p>Discover why continuous health tracking plays a vital role in managing chronic conditions like diabetes, hypertension, and more.</p>
-        <button class="read-more">Read More</button>
-      </article>
-      <article>
-        <h3>Nutrition Tips for Chronic Illness</h3>
-        <p>Learn about meal planning, supplements, and healthy eating habits that support long-term well-being.</p>
-        <button class="read-more">Read More</button>
-      </article>
-    </section>
+  <section>
+    <h2>New Patient</h2>
+    <button id="Register-btn">Register Patient</button>
+    <button id="Cancel-btn">Cancel Registration</button>
+    <div id="box"></div>
+  </section>
 
-    <section id="gallery">
-      <h2>Gallery</h2>
-      <div class="gallery">
-        <img src="img1.jpg" alt="Health Event 1">
-        <img src="img2.jpg" alt="Health Workshop 2">
-        <img src="img3.jpg" alt="Patient Seminar 3">
-      </div>
-    </section>
+  <section>
+    <h2>Image Gallery</h2>
+    <div class="gallery">
+      <img src="img1.jpg" class="gallery-img" alt="Gallery Image 1">
+      <img src="img2.jpg" class="gallery-img" alt="Gallery Image 2">
+      <img src="img3.jpg" class="gallery-img" alt="Gallery Image 3">
+    </div>
+  </section>
 
-    <section id="signup">
-      <h2>Subscribe for Updates</h2>
-      <form id="signup-form">
-        <label for="email">Email:</label>
-        <input type="email" id="email" required>
-        <small id="email-feedback"></small>
+  <section>
+    <h2>Form Validation</h2>
+    <form id="signup-form">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <small id="email-feedback"></small>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" required minlength="8">
-        <small id="password-feedback"></small>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required minlength="8">
+      <small id="password-feedback"></small>
 
-        <label for="theme">Theme Color:</label>
-        <select id="theme-selector">
-          <option value="default">Default</option>
-          <option value="green">Green</option>
-          <option value="blue">Blue</option>
-        </select>
+      <label for="theme">Theme Color:</label>
+      <select id="theme-selector">
+        <option value="default">Default</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+      </select>
 
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Email: support@chronicare.co.ke</p>
-      <p>Phone: +254 700 000 000</p>
-    </section>
-  </main>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 
   <footer>
-    <p>© 2025 Chronicare Blog - Kenya</p>
+    <p>© 2025 ChronicareLtd - Kenya</p>
   </footer>
 
   <script src="script.js"></script>
