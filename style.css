@@ -1,75 +1,50 @@
-/* General Reset and Fonts */
 body {
-  margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
-  color: #222;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-/* Header */
-header {
-  background-color: #00796b;
+header, nav, footer {
+  background: #00695c;
   color: white;
-  padding: 20px;
+  padding: 1rem;
   text-align: center;
 }
 
-nav ul {
+.navbar {
+  list-style: none;
   display: flex;
   justify-content: center;
-  list-style: none;
-  padding: 0;
   gap: 20px;
+  padding: 0;
+  margin: 0;
 }
 
-nav a {
+.navbar li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
 }
 
-nav a:hover {
+.navbar li a:hover {
   text-decoration: underline;
 }
 
-/* Section Styling */
-section {
-  padding: 20px;
-  border-bottom: 1px solid #ccc;
+section, main {
+  padding: 1rem 2rem;
 }
 
-button {
-  margin: 5px;
-  padding: 10px 15px;
-  cursor: pointer;
-  background-color: #009688;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #00796b;
-}
-
-.animated-button {
-  animation: pulse 2s infinite;
-}
-
-/* Gallery */
 .gallery {
   display: flex;
   gap: 10px;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
 .gallery-img {
-  width: 200px;
-  height: auto;
-  border: 2px solid #ccc;
+  width: 30%;
+  border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
@@ -77,50 +52,33 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* Forms */
-form {
-  max-width: 400px;
-  margin: auto;
-}
-
-input, textarea, select {
-  width: 100%;
-  padding: 8px;
-  margin: 6px 0 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-small {
-  color: red;
-  font-size: 0.9em;
-}
-
-/* Footer */
-footer {
+.animated-button {
   background-color: #00796b;
   color: white;
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 40px;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Animations */
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+.animated-button:hover {
+  background-color: #004d40;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
+form input, form select, form textarea, form button {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0 1rem;
+  padding: 0.5rem;
+}
 
-  .gallery {
-    flex-direction: column;
-    align-items: center;
-  }
+.green-theme {
+  background-color: #e0f2f1;
+  color: #004d40;
+}
+
+.blue-theme {
+  background-color: #e3f2fd;
+  color: #0d47a1;
 }
